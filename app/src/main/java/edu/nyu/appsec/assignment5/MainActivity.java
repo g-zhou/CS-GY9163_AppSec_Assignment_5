@@ -54,9 +54,7 @@ public class MainActivity extends AppCompatActivity {
         view.setWebViewClient(new MyWebViewClient());
 
         WebSettings settings = view.getSettings();
-        settings.setAllowFileAccessFromFileURLs(true);
         settings.setJavaScriptEnabled(true);
-        settings.setAllowUniversalAccessFromFileURLs(true);
 
         setContentView(view);
         view.loadUrl(SPELL_CHECK_URL + "register");
